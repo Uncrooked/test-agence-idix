@@ -1,0 +1,75 @@
+:root{
+    --default-spacing:20px; /*the spacing used to seperates blocks and padding*/
+    --min-width-block-children:300px;
+}
+
+/*——————————————————————————————————————————GLOBAL—————————————————————————————————————————————————*/
+
+*{
+    padding:0;
+    margin:0;
+}
+
+body{
+    padding:var(--default-spacing);
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    height:calc(100vh - (var(--default-spacing) * 2));/*fill the screen excluding padding*/
+}
+
+/*——————————————————————————————————————————END GLOBAL————————————————————————————————————————————————*/
+
+
+/*—————————————————————————————————————————BLOCKS————————————————————————————————————————————————*/
+
+/*global*/
+
+.block{
+    background-color:black;
+    color:white;
+    padding:var(--default-spacing);
+}
+
+/*global*/
+
+.block.first{
+    margin-bottom:var(--default-spacing);
+    width:min(calc(1200px - (var(--default-spacing) * 2)),calc(100vw - (var(--default-spacing) * 4))); /*width min with a max width at 1200px and each exclude padding*/
+    height:calc((100%/3) - (var(--default-spacing) * 2)); /*height fill first block exclude padding*/
+}
+
+.container_block{
+    display:flex;
+    flex-wrap:wrap;
+    gap:var(--default-spacing);
+    width:min(1200px,calc(100vw - (var(--default-spacing) * 2))); /*width with using min to adjust width the size and with a max width at start width 1200px excluding padding*/
+    height:calc((200%/3) + var(--default-spacing)); /*height fill second and third block*/
+}
+
+/*block second and third*/
+
+.container_block .block.second,.container_block .block.third{
+    min-width:var(--min-width-block-children);
+}
+
+.container_block .block.second{
+    flex-grow:2;
+}
+
+.container_block .block.third{
+    flex-grow:1;
+}
+
+/*end block second and third*/
+
+/*——————————————————————————————————————————END BLOCKS————————————————————————————————————————————————*/
+
+
+/*—————————————————————————————————————————RESPONSIVE————————————————————————————————————————————————*/
+@media(max-width:425px){
+    :root{
+        --min-width-block-children:calc(100% - (var(--default-spacing) * 2));
+    }
+}
+/*——————————————————————————————————————————RESPONSIVE————————————————————————————————————————————————*/

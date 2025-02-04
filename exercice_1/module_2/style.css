@@ -1,0 +1,62 @@
+/* —————————————————————————————————————————————TEXTS———————————————————————————————————————————————*/
+
+
+/*———————GLOBAL-———————*/
+
+h2,a{
+    color:black;
+}
+
+h2,p{
+    font-size:16px;
+}
+
+h1,h2{
+    font-weight:bold;
+    font-family:sans-serif;
+}
+
+/*———————END GLOBAL-———————*/
+
+/*———————EACH-———————*/
+
+h1{
+    font-size:28px;
+}
+
+h2{
+    margin-top:5px;
+}
+
+/*———————EACH-———————*/
+
+/*—————————————————————————————————————————————END TEXTS———————————————————————————————————————————————*/
+
+/*—————————————————————————————————————————————LIST———————————————————————————————————————————————*/
+
+ul{
+    max-width:650px;
+    padding:0;
+}
+
+li a{
+    text-decoration: none;
+}
+
+li a article{
+    display:flex;
+    gap:20px;
+    align-items: start;
+    border-bottom:solid 1px #EFEFEF;
+    padding:20px;
+    transition:all 0.2s;
+}
+
+li a article:hover{
+    background-color:#EFEFEF;
+}
+
+li a img{
+    width:100px;
+}
+/*—————————————————————————————————————————————END LIST———————————————————————————————————————————————*/

@@ -1,0 +1,48 @@
+/*—————————————————————————————————————————————GLOBAL———————————————————————————————————————————————*/
+h1,a{
+    font-family:sans-serif;
+    font-weight:bold;
+}
+/*—————————————————————————————————————————————END GLOBAL———————————————————————————————————————————————*/
+
+/*—————————————————————————————————————————————NAV———————————————————————————————————————————————*/
+ul{
+    display:flex;
+    gap:2px;
+    padding:0;
+}
+
+li{
+    background-color:#41363B;
+    list-style: none;
+    padding:15px;
+    min-width:80px;
+    position:relative;
+    transition:background-color 0.2s;
+}
+
+li:nth-child(2):after{
+    content:"";
+    display:block;
+    height:10px;
+    width:10px;
+    background-color: white;
+    position:absolute;
+    bottom:-5px;
+    left:calc(50% - 5px);
+    transform: rotate(45deg);
+}
+
+li:hover{
+    background-color:#5B5055;
+}
+
+li a{
+    text-transform:uppercase;
+    display:block;
+    color:white;
+    text-decoration: none;
+    text-align: center;
+    font-size:12px;
+}
+/*—————————————————————————————————————————————END NAV———————————————————————————————————————————————*/

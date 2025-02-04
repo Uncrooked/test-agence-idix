@@ -1,0 +1,61 @@
+/* —————————————————————————————————————————————GLOBAL———————————————————————————————————————————————*/
+
+h1{
+    font-size:28px;
+}
+
+/*style de base du texte*/
+form label,input,button, h1{
+    font-family:sans-serif;
+}
+
+form label,input,button{
+    font-size:16px;
+}
+
+/*couleur de base du texte*/
+form label,input{
+    color:#222222;
+}
+
+/*—————————————————————————————————————————————END GLOBAL———————————————————————————————————————————————*/
+
+/*—————————————————————————————————————————————FORM———————————————————————————————————————————————*/
+
+form label{
+    display:block;
+    font-weight:bold;
+    margin-bottom:3px;
+}
+
+form button, form div.row{
+    display:inline;
+}
+
+form input, form button{
+    border-radius:5px;
+}
+
+form input{
+    padding:8px;
+    border:solid 1px #BFBFBF;
+}
+
+form input:focus{
+    outline: solid 1px black;
+}
+
+form button{
+    background-color:#D14E1C;
+    border:none;
+    padding:8px 12px;
+    color:white;
+    transition:all 0.5s;
+}
+
+form button:hover{
+    transform:scale(1.04);
+    background-color:#DE5B2A;
+}
+
+/*—————————————————————————————————————————————END FORM——————————————————————————————————————————————— */
